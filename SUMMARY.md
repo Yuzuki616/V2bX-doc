@@ -1,38 +1,20 @@
 # Table of contents
 
-* [关于XrayR](README.md)
+* [关于V2bX](README.md)
 
-## XrayR下载和安装
+## V2bX下载和安装
 
-* [下载和安装](xrayr-xia-zai-he-an-zhuang/install/README.md)
-  * [使用一键脚本安装](xrayr-xia-zai-he-an-zhuang/install/one-click.md)
-  * [使用docker安装](xrayr-xia-zai-he-an-zhuang/install/docker.md)
-  * [手动安装](xrayr-xia-zai-he-an-zhuang/install/manual.md)
+* [下载和安装](v2bx-xia-zai-he-an-zhuang/install/README.md)
+  * [使用一键脚本安装](v2bx-xia-zai-he-an-zhuang/install/one-click.md)
+  * [手动安装](v2bx-xia-zai-he-an-zhuang/install/manual.md)
 
-## XrayR配置文件说明
+## V2bX配置文件说明
 
-* [配置文件说明](xrayr-pei-zhi-wen-jian-shuo-ming/config.md)
-
-## 对接SSpanel
-
-* [基本对接配置](dui-jie-sspanel/sspanel/README.md)
-  * [对接新版SSPanel Custom Config](dui-jie-sspanel/sspanel/sspanel_custom_config.md)
-  * [对接V2ray](dui-jie-sspanel/sspanel/v2ray.md)
-  * [对接Trojan](dui-jie-sspanel/sspanel/trojan.md)
-  * [对接Shadowsocks](dui-jie-sspanel/sspanel/shadowsocks.md)
-  * [对接Shadowsocks - V2Ray-Plugin](dui-jie-sspanel/sspanel/dui-jie-shadowsocks-v2rayplugin.md)
+* [配置文件说明](v2bx-pei-zhi-wen-jian-shuo-ming/config.md)
 
 ## 对接V2board
 
 * [基本对接配置](dui-jie-v2board/v2board.md)
-
-## 对接PMPanel
-
-* [基本对接配置](dui-jie-pmpanel/ji-ben-dui-jie-pei-zhi.md)
-
-## 对接ProxyPanel
-
-* [基本对接配置](dui-jie-proxypanel/ji-ben-dui-jie-pei-zhi.md)
 
 ## 功能说明
 
@@ -51,4 +33,3 @@
 * [内存优化相关](za-xiang/memopt.md)
 * [为什么要引入Shadowsocks - V2Ray-Plugin](za-xiang/wei-shen-me-yao-yin-ru-shadowsocks-v2rayplugin.md)
 * [Nginx+Trojan暂时滴神！](za-xiang/nginx+trojan-zan-shi-di-shen.md)
-

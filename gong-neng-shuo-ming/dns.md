@@ -1,6 +1,6 @@
 # 自定义DNS说明
 
-XrayR支持为不同节点设置不同的DNS策略，具体方法如下：
+V2bX支持为不同节点设置不同的DNS策略，具体方法如下：
 
 1. 编写dns.json文件，此配置与Xray DNS配置完全相同，请查看：[https://xtls.github.io/config/dns.html](https://xtls.github.io/config/dns.html) 获取帮助。
 2. 在`config.yml`中配置`DnsConfigPath`为dns.json的路径。
@@ -38,4 +38,3 @@ XrayR支持为不同节点设置不同的DNS策略，具体方法如下：
 1. 在所需要设置IPV4优先的节点中，将`EnableDNS`设为true。
 2. 在所需要设置IPV4优先的节点中，将`SendIP`设为`"0.0.0.0"`。
 3. 在所需要设置IPV4优先的节点中，将`DNSType`设为`UseIP`。
-
