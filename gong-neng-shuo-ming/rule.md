@@ -8,7 +8,7 @@
 
 针对不支持远程设置审计规则的面板：如V2board，可以在本地配置文件`RuleListPath`设置本地规则文件路径。规则文件不需要定义文件类型，每条**正则规则**一行，默认本地规则ID标号为-1。
 
-配置文件详见：[配置文件说明](../v2bx-pei-zhi-wen-jian-shuo-ming/config.md#mian-ban-dui-jie-pei-zhi)
+配置文件详见：[配置文件说明](../xrayr-pei-zhi-wen-jian-shuo-ming/config.md#mian-ban-dui-jie-pei-zhi)
 
 **本地规则文件示例**
 

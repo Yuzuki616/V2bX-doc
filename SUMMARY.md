@@ -4,13 +4,13 @@
 
 ## V2bX下载和安装
 
-* [下载和安装](v2bx-xia-zai-he-an-zhuang/install/README.md)
-  * [使用一键脚本安装](v2bx-xia-zai-he-an-zhuang/install/one-click.md)
-  * [手动安装](v2bx-xia-zai-he-an-zhuang/install/manual.md)
+* [下载和安装](xrayr-xia-zai-he-an-zhuang/install/README.md)
+  * [使用一键脚本安装](xrayr-xia-zai-he-an-zhuang/install/one-click.md)
+  * [手动安装](xrayr-xia-zai-he-an-zhuang/install/manual.md)
 
 ## V2bX配置文件说明
 
-* [配置文件说明](v2bx-pei-zhi-wen-jian-shuo-ming/config.md)
+* [配置文件说明](xrayr-pei-zhi-wen-jian-shuo-ming/config.md)
 
 ## 对接V2board
 

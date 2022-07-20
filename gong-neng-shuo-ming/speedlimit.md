@@ -12,4 +12,4 @@
 节点限速：所有连接到该节点的用户限速值都会采用`SpeedLimit`中的设置值\*\*（不是端口限速）\*\*
 {% endhint %}
 
-配置文件详见：[配置文件说明](../v2bx-pei-zhi-wen-jian-shuo-ming/config.md#mian-ban-dui-jie-pei-zhi)
+配置文件详见：[配置文件说明](../xrayr-pei-zhi-wen-jian-shuo-ming/config.md#mian-ban-dui-jie-pei-zhi)

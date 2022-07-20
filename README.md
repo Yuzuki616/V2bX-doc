@@ -10,13 +10,11 @@ A V2board node server based on Xray-core, modified from XrayR
 
 一个基于Xray-core的V2board节点服务端，修改自XrayR，支持V2ay,Trojan,Shadowsocks协议。
 
-项目地址: [https://github.com/XrayR-project](https://github.com/XrayR-project)
-
 ## 项目目录
 
-* [XrayR](https://github.com/XrayR-project/XrayR)：XrayR源码以及软件发布。
-* [XrayR-release](https://github.com/XrayR-project/XrayR-release)：XrayR一键安装脚本以及Docker。
-* [XrayR-doc](https://github.com/XrayR-project/XrayR-doc)：XrayR文档源码。
+* [V2bX](https://github.com/Yuzuki616/V2bX)：V2bX源码以及软件发布。
+* [V2bX-script](https://github.com/Yuzuki616/V2bX-script)：V2bX一键安装脚本。
+* [V2bX-doc](https://github.com/Yuzuki616/V2bX-doc)：XrayR文档源码。
 
 ## 特点
 
@@ -47,14 +45,7 @@ A V2board node server based on Xray-core, modified from XrayR
 | 按照用户限速    | √     | √      | √           |
 | 自定义DNS    | √     | √      | √           |
 
-## 支持前端
 
-| 前端                                                     | v2ray | trojan | shadowsocks             |
-| ------------------------------------------------------ | ----- | ------ | ----------------------- |
-| sspanel-uim                                            | √     | √      | √ (单端口多用户和V2ray-Plugin) |
-| v2board                                                | √     | √      | √                       |
-| [PMPanel](https://github.com/ByteInternetHK/PMPanel)   | √     | √      | √                       |
-| [ProxyPanel](https://github.com/ProxyPanel/ProxyPanel) | √     | √      | √                       |
 
 ## V2ray支持协议
 

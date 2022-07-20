@@ -18,4 +18,4 @@
     ./XrayR -config config.yml
     ```
 
-配置文件详见：[配置文件说明](../../v2bx-pei-zhi-wen-jian-shuo-ming/config.md)
+配置文件详见：[配置文件说明](../../xrayr-pei-zhi-wen-jian-shuo-ming/config.md)

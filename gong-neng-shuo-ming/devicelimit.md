@@ -4,7 +4,7 @@
 
 如需启用，可在配置文件中将`DeviceLimit`设为非0值，注意此设置会覆盖远程获取的用户设备限制数目。
 
-配置文件详见：[配置文件说明](../v2bx-pei-zhi-wen-jian-shuo-ming/config.md#mian-ban-dui-jie-pei-zhi)
+配置文件详见：[配置文件说明](../xrayr-pei-zhi-wen-jian-shuo-ming/config.md#mian-ban-dui-jie-pei-zhi)
 
 ## 全局设备限制
 
