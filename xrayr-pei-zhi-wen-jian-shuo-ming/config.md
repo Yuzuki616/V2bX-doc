@@ -53,6 +53,12 @@ Nodes:
           Path: # HTTP PATH, Empty for any
           Dest: 80 # Required, Destination of fallback, check https://xtls.github.io/config/fallback/ for details.
           ProxyProtocolVer: 0 # Send PROXY protocol version, 0 for dsable
+      IpRecorderConfig:
+          Url: "http://127.0.0.1:123" # Report url
+          Token: "123" # Report token
+          Periodic: 60 # Report interval, sec.
+          Timeout: 10 # Report timeout, sec.
+          EnableIpSync: false # Enable online ip sync
       CertConfig:
         CertMode: dns # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
         CertDomain: "node1.test.com" # Domain to cert
@@ -230,6 +236,12 @@ Nodes:
           Path: # HTTP PATH, Empty for any
           Dest: 80 # Required, Destination of fallback, check https://xtls.github.io/config/fallback/ for details.
           ProxyProtocolVer: 0 # Send PROXY protocol version, 0 for dsable
+      IpRecorderConfig:
+          Url: "http://127.0.0.1:123" # Report url
+          Token: "123" # Report token
+          Periodic: 60 # Report interval, sec.
+          Timeout: 10 # Report timeout, sec.
+          EnableIpSync: false # Enable online ip sync
       CertConfig:
         CertMode: dns # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
         CertDomain: "node1.test.com" # Domain to cert
@@ -269,16 +281,6 @@ Nodes:
           ALICLOUD_SECRET_KEY: bbb
 ```
 
-#### 面板选择
-
-```yaml
-PanelType: "V2board" # Panel type: SSpanel, V2board, PMpanel, Proxypanel
-```
-
-| 参数          | 选项                                         | 说明       |
-| ----------- | ------------------------------------------ | -------- |
-| `PanelType` | `SSPanel`,`V2board`,`PMpanel`,`Proxypanel` | 对接前端面板类型 |
-
 #### 面板对接配置
 
 ```yaml
@@ -296,19 +298,19 @@ ApiConfig:
     DisableCustomConfig: false # Disable custom config
 ```
 
-| 参数                    | 选项                                                   | 说明                           |
-| --------------------- | ---------------------------------------------------- | ---------------------------- |
-| `ApiHost`             | 无                                                    | 对接前端面板地址                     |
-| `ApiKey`              | 无                                                    | 前端对接通讯秘钥                     |
-| `NodeID`              | 无                                                    | 节点ID                         |
-| `NodeType`            | `V2ray`,`Shadowsocks`, `Shadowsocks-Plugin`,`Trojan` | 节点类型                         |
-| `Timeout`             | 无                                                    | 设定单次访问API超时时间，默认5秒           |
-| `EnableVless`         | `true`,`false`                                       | 是否给V2ray启用Vless协议            |
-| `EnableXTLS`          | `true`,`false`                                       | 是否使用XTLS                     |
-| `SpeedLimit`          | float                                                | 单位Mbps, 本地限速设置，会覆盖远程设置，0为不启用 |
-| `DeviceLimit`         | int                                                  | 本地设备限制，会覆盖远程设置，0为不启用         |
-| `RuleListPath`        | 无                                                    | 本地规则设置，指定本地规则文件路径，规则文件格式     |
-| `DisableCustomConfig` | `true`,`false`                                       | 是否启用custom\_config，默认false   |
+| 参数                    | 选项                             | 说明                           |
+| --------------------- | ------------------------------ | ---------------------------- |
+| `ApiHost`             | 无                              | 对接前端面板地址                     |
+| `ApiKey`              | 无                              | 前端对接通讯秘钥                     |
+| `NodeID`              | 无                              | 节点ID                         |
+| `NodeType`            | `V2ray`,`Shadowsocks`,`Trojan` | 节点类型                         |
+| `Timeout`             | 无                              | 设定单次访问API超时时间，默认5秒           |
+| `EnableVless`         | `true`,`false`                 | 是否给V2ray启用Vless协议            |
+| `EnableXTLS`          | `true`,`false`                 | 是否使用XTLS                     |
+| `SpeedLimit`          | float                          | 单位Mbps, 本地限速设置，会覆盖远程设置，0为不启用 |
+| `DeviceLimit`         | int                            | 本地设备限制，会覆盖远程设置，0为不启用         |
+| `RuleListPath`        | 无                              | 本地规则设置，指定本地规则文件路径，规则文件格式     |
+| `DisableCustomConfig` | `true`,`false`                 | 是否启用custom\_config，默认false   |
 
 #### 后端相关配置
 
@@ -347,10 +349,30 @@ ControllerConfig:
 | `EnableProxyProtocol`  | `true`,`false`                     | 是否为当前节点启用ProxyProtocol获取中转IP，只对TCP和WS有效                                                                 |
 | `EnableFallback`       | `true`,`false`                     | 是否为当前节点启用Fallback，只对Vless和Trojan协议有效                                                                    |
 | `FallBackConfigs`      | list                               | Fallback 相关配置，请查看 [Fallback功能说明](../gong-neng-shuo-ming/fallback.md)                                    |
+| `EnableIpRecorder`     | `true`,`false`                     | 启用[外部记录器](https://github.com/Yuzuki616/IpRecorder)                                                      |
+
+#### 外部记录器配置
+
+```
+IpRecorderConfig:
+          Url: "http://127.0.0.1:123" # Report url
+          Token: "123" # Report token
+          Periodic: 60 # Report interval, sec.
+          Timeout: 10 # Report timeout, sec.
+          EnableIpSync: false # Enable online ip sync
+```
+
+| 参数           | 选项 | 说明                |
+| ------------ | -- | ----------------- |
+| Url          | 无  | 外部记录器地址           |
+| Token        | 无  | 外部记录器令牌           |
+| Periodic     | 无  | 与外部记录器同步数据的间隔     |
+| Timeout      | 无  | 超时时间              |
+| EnableIpSync | 无  | 启用同步在线设备（跨节点设备限制） |
 
 #### 证书申请相关配置
 
-XrayR 支持多种自动申请证书配置。申请到的证书将会放在**配置文件(config.yml)目录的`cert`文件夹下**。
+XrayR 支持多种自动申请证书配置。申请到的证书将会放在**配置文件(config.yml)文件夹下**。
 
 ```yaml
 CertConfig:

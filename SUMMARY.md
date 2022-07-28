@@ -27,6 +27,7 @@
 * [审计功能说明](gong-neng-shuo-ming/rule.md)
 * [自动申请证书说明](gong-neng-shuo-ming/cert.md)
 * [Fallback 功能说明](gong-neng-shuo-ming/fallback.md)
+* [跨节点设备限制说明](gong-neng-shuo-ming/kua-jie-dian-she-bei-xian-zhi-shuo-ming.md)
 
 ## 杂项
 
